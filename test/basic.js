@@ -150,7 +150,7 @@ describe("neuron objects action functions", function () {
         assert.equal(neuronObj.synapses.length, 0);
     });
 
-    it("should call setState on the synapse after setState is called on the neuron and return 1", function () {
+    it("should call getState on the synapse after setState is called on the neuron and return 1", function () {
         var neuronObj = neuron(),
             synapse = {
                 test: 0,
@@ -166,7 +166,7 @@ describe("neuron objects action functions", function () {
         assert.equal(synapse.test, 1);
     });
 
-    it("should call setState on each synapse after setState is called on the neuron and return 2", function () {
+    it("should call getState on each synapse after setState is called on the neuron and return 2", function () {
         var neuronObj = neuron(),
             synapse1 = {
                 test: null,
